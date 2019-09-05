@@ -1,0 +1,33 @@
+<%- include("../partials/header") %>
+<section>
+  <form action="/cohorts/new" method="POST">
+    <div>
+      <label for="logoUrl">Logo Url</label>
+      <input 
+        type="text" 
+        name="logoUrl" 
+        placeholder="e.g. https://www.example.com/some.png"
+      >
+    </div>
+
+    <div>
+      <label for="name">Name</label>
+      <input 
+        type="text" 
+        name="name" 
+        placeholder="Flying Funks"
+      >
+    </div>
+
+    <div>
+      <label for="members">Members</label>
+      <textarea 
+        type="text" 
+        name="members" 
+        placeholder="Jon Snow, Daenerys, Melisandre, Arya Stark">
+      </textarea>
+    </div>
+      <input type="submit" value="Submit">
+  </form>
+</section>
+<%- include("../partials/footer") %>
